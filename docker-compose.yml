@@ -1,0 +1,14 @@
+
+services:
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    ports:
+      - 10000:10000
+    volumes:
+      - dask_azurite_volume:/data mcr.microsoft.com/azure-storage/azurite
+    command: ["azurite-blob", "--blobHost", "0.0.0.0"]
+
+volumes:
+
+  dask_azurite_volume: {}
