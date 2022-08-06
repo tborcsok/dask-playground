@@ -1,6 +1,5 @@
-
 services:
-
+  # local Azure storage account emulator
   azurite:
     image: mcr.microsoft.com/azure-storage/azurite
     ports:
@@ -9,6 +8,9 @@ services:
       - dask_azurite_volume:/data mcr.microsoft.com/azure-storage/azurite
     command: ["azurite-blob", "--blobHost", "0.0.0.0"]
 
-volumes:
+  # Dask cluster: scheduler
+  # Dask cluster: workers
+  # TODO
 
+volumes:
   dask_azurite_volume: {}

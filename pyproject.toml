@@ -10,11 +10,15 @@ dask = "^2022.8.0"
 distributed = "^2022.8.0"
 pandas = "^1.4.3"
 numpy = "^1.23.1"
+pyarrow = "^9.0.0"
+adlfs = "^2022.7.0"
 
 [tool.poetry.dev-dependencies]
 black = "pylint"
 isort = "^5.10.1"
 jupyter = "^1.0.0"
+mypy = "^0.971"
+pylint = "^2.14.5"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
