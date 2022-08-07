@@ -6,7 +6,7 @@ authors = ["Tamás Börcsök <tborcsok@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-dask = "^2022.8.0"
+dask = {version = "^2022.8.0", extras = ["complete"]}
 distributed = "^2022.8.0"
 pandas = "^1.4.3"
 numpy = "^1.23.1"
