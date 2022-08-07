@@ -2,3 +2,5 @@
 .ipynb_checkpoints
 
 azurite/
+
+__pycache__
