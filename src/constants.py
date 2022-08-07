@@ -12,3 +12,10 @@ CONN_STR_LOCAL = (
     "AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;"
     "BlobEndpoint=https://127.0.0.1:10000/devstoreaccount1"
 )
+
+CONN_STR_DOCKER = (
+    "DefaultEndpointsProtocol=https;"
+    "AccountName=devstoreaccount1;"
+    "AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;"
+    "BlobEndpoint=https://azurite:10000/devstoreaccount1"
+)

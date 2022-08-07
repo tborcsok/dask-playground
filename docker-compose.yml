@@ -21,8 +21,7 @@ services:
     command:
       [
         "azurite-blob",
-        "--oauth",
-        "basic",
+        "--silent",
         "--location",
         "/data",
         "--blobHost",
@@ -33,23 +32,23 @@ services:
         "/cert/key.pem",
       ]
 
-  # dev_notebook:
-  #   <<: *dask-common
-  #   ports:
-  #     - 8888:8888
-  #   working_dir: /work
-  #   volumes:
-  #     - ./:/work
-  #   command:
-  #     [
-  #       "jupyter",
-  #       "notebook",
-  #       "-y",
-  #       "--no-browser",
-  #       "--allow-root",
-  #       "--port=8888",
-  #       "--ip=0.0.0.0",
-  #     ]
+  dev_notebook:
+    <<: *dask-common
+    ports:
+      - 8888:8888
+    working_dir: /work
+    volumes:
+      - ./:/work
+    command:
+      [
+        "jupyter",
+        "notebook",
+        "-y",
+        "--no-browser",
+        "--allow-root",
+        "--port=8888",
+        "--ip=0.0.0.0",
+      ]
 
   dask_scheduler:
     <<: *dask-common
