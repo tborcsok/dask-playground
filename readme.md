@@ -1,9 +1,12 @@
-# Developer infrastructure
+# Dask playground
+
+Try out Dask on your own machine with Docker Compose.
 
 Includes:
 
 - Azure blob storage emulator (Azurite)
 - Dask cluster
+- Jupyter server
 
 ## Starting Azure storage account emulator
 
